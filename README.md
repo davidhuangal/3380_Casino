@@ -1,3 +1,8 @@
 # 3380_banking
 
-## Hello World
+## Team Members
+* Kyle Deppe
+* Kyle Moore
+* Brent Schultz
+* Ethan Schutzenhofer
+* David Huangal
