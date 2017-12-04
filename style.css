@@ -1,0 +1,64 @@
+body{
+    background-image: url('images/background.jpg');
+    background-position: center;
+    background-repeat:repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+
+img{
+    width:80px;
+    height:115px;
+}
+
+#maintitle{
+    text-align: center;
+    font-size: 6em;
+    font-family: "Palatino Linotype", "Times New Roman", serif;
+    font-style:italic;
+    color: darkred;
+    text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black
+}
+
+.buttontype1{
+    font-size: 2em;
+    border-radius: 5px;
+    background-color: darkred;
+    border-color: darkred;
+}
+
+.buttontype2{
+    font-size: 2em;
+    border-radius: 5px;
+    background-color: black;
+    border-color: black;
+    color: darkred;
+}
+
+.buttontype3{
+    font-size: 1.2em;
+    border-radius: 5px;
+    background-color: black;
+    border-color: black;
+    color: darkred;
+}
+
+.graypane{
+    text-align: center;
+    margin: auto;
+    height: 200px;
+    border: solid;
+    width: 500px;
+    background-color: darkgray;
+    border-radius: 30px;
+}
+
+.buttontype4{
+    font-size: 1.2em;
+    border-radius: 5px;
+    background-color: darkred;
+    border-color: darkred;
+}
+
+

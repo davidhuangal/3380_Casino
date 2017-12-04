@@ -1,0 +1,70 @@
+<!--
+	name: Kyle Moore
+	pawprint: Kamqn2
+	date: 11/30/2017
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Kyle's Kasino</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="jquery-ui-1.11.4.custom/jquery-ui.min.css" rel="stylesheet" type="text/css">
+		<style>
+            
+            h3{
+                text-align: center;
+            }
+            
+            #buttons{
+                text-align: center;
+            }
+            
+            #logb{
+                font-size: 3em;
+                border-radius: 15px;
+            }
+            
+            #login{
+                text-align: center;
+                margin: auto;
+                height: 200px;
+                border: solid;
+                width: 500px;
+                background-color: darkgray;
+                border-radius: 30px;
+            }
+            
+            
+		</style>
+        <script src="jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+        <script src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+		<script>
+            
+            function gototut(){
+                window.location.href = "tut.html";
+            }
+            
+            function log(){
+                window.location.href = "login.php";
+            }
+            
+		</script>
+	</head>
+	<body>
+        <h1 id="maintitle">Welcome to Kyle's Blackjack Kasino!</h1>
+        <br>
+        <br>
+        <div id="login">
+            <h3>Log in to play!</h3>
+            <button id="logb" type="button" onclick="log()">Enter</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="buttons">
+            <button id="help" type="button" onclick="gototut()" class="buttontype1">How To Play</button>
+        </div>
+    </body>
+</html>
