@@ -377,6 +377,9 @@
                 //Form validation from https://www.w3schools.com/js/js_validation.asp
                 
                 var val = document.forms["betform"]["bet"].value;
+		var header = document.getElementById("koincount").innerHTML;
+                var koinval = $(header).text();
+                parseInt(koinval);
                 
                 if(val == ""){
                     alert("Bet can't be empty!");
@@ -386,6 +389,11 @@
                     alert("Invalid bet!");
                     return false;
                 }
+		if(val > koinval){
+                    alert("You can't bet more than you have!");
+                    return false;
+                }
+		
                 return true;
             }
 			 
