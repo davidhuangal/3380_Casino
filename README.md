@@ -7,4 +7,8 @@
 * Ethan Schutzenhofer
 * David Huangal
 
-# Add other stuff here later
+# Description of application
+
+# Schema
+
+# Other necessary parts....
