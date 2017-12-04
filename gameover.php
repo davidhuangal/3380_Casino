@@ -46,10 +46,6 @@
     $result = $mysqli->query($query);
     $row = mysqli_fetch_row($result);
     $koins = $row[0];
-    if(!$koins){
-        print "Error: could not complete database query.";
-        exit;
-    }
     $result->close();
     $mysqli->close();
     exit;
