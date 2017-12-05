@@ -365,11 +365,20 @@
 			}
 
             function doubled(){
+                var header = document.getElementById("koincount").innerHTML;
+                var koinval = $(header).text();
+                parseInt(koinval);
                 var num = document.forms["betform"]["bet"].value;
                 num = num * 2;
-                document.forms["betform"]["bet"].value = num;
-                userhit();
-                endround();
+                if(num < koinval){
+                    document.forms["betform"]["bet"].value = num;
+                    userhit();
+                    endround();
+                }
+                else{
+                    alert("You can't bet more than you have!");
+                    return;
+                }
             }
             
             function validatebet(){
