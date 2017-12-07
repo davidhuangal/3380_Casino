@@ -36,6 +36,8 @@
 	function handle_login() {
 		$username = empty($_POST['username']) ? '' : $_POST['username'];
 		$password = empty($_POST['password']) ? '' : $_POST['password'];
+		
+		 $email= empty($_POST['email']) ? '' : $_POST['email'];
 	
         /*
 		if ($username == "test" && $password == "pass") {
@@ -65,6 +67,7 @@
         // http://php.net/manual/en/mysqli.real-escape-string.php
         $username = $mysqli->real_escape_string($username);
         $password = $mysqli->real_escape_string($password);
+	$email= $mysqli->real_escape_string($email);
         
         //more secure password storing for website
         $password = sha1($password); 
@@ -110,7 +113,9 @@
                 }
                 else{
                     $mysqli3 = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
-                    $query3 = "INSERT INTO users (username, password, koins, displayname) VALUES('$username', '$password', '500', '$username')";
+		    $query3 = "INSERT INTO users (username, password, koins) VALUES('$username', '$password', '500')";
+                    $mysqli3->query($query3);
+		    $query3 = "INSERT INTO emails (email) VALUES('$email')";
                     $mysqli3->query($query3);
                     $_SESSION['loggedin'] = $username;
                     header("Location: profile.php");
