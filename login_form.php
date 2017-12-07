@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Created by Professor Wergeles for CS2830 at the University of Missouri. Style change and account creation added by Kyle Moore. -->
+<!-- Created by Professor Wergeles for CS2830 at the University of Missouri. Style change, account creation, and email addition added by Kyle Moore. -->
 <html>
 <head>
 	<title>Database Login</title>
@@ -47,6 +47,10 @@
                 </div>
                 <br>
                 <div>
+		<div>
+                    <input type="email" placeholder="Enter Your Email" name="email" required>
+                </div>
+                <br>
                     <button id="help" type="submit" class="buttontype1">Submit</button>
                 </div>
             </div>
