@@ -9,7 +9,7 @@
         #logpane{
             text-align: center;
             margin: auto;
-            height: 250px;
+            height: 300px;
             border: solid;
             width: 400px;
             background-color: darkgray;
