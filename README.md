@@ -23,7 +23,7 @@ id int primary key auto_increment not null,
 email varchar(255) not null unique  
 
 ## ERD
-![alt-text](https://i.imgur.com/E5FSl5C.png "3380 Casino ERD)
+![alt-text](https://i.imgur.com/E5FSl5C.png "3380 Casino ERD")
 
 # Elements of CRUD
 ## Create
