@@ -67,6 +67,11 @@
             <input type="text" placeholder="Enter Display Name" name="dname" required>
             <button type="submit">Play!</button>
         </form>
+	<br>
+        <br>
+        <form action="delete.php" method="post">
+            <button type="submit">DELETE ACCOUNT</button>
+        </form>
     </div>
     
 </body>
