@@ -28,7 +28,7 @@ email varchar(255) not null unique
 A new row is inserted into a table when the user creates an account. This can be seen on lines 116 and 118 of "login.php".
 
 ## Read
-Information is read from a table when the user logs in to an existing account, or, when the program fetches the userss "Kyle Koin" balance. The code for the latter scenario can be seen on line 24 of "getkoins.php".
+Information is read from a table when the user logs in to an existing account, or, when the program fetches the user's "Kyle Koin" balance. The code for the latter scenario can be seen on line 24 of "getkoins.php".
 
 ## Update
 Information is updated in a table when the user finishes a round of Blackjack, or, when the user clikcs "Refill Koins" on their profile page. The code for the latter scenario can be seen on line 24 of "refillkoins.php".
