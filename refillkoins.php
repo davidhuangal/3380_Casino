@@ -17,10 +17,12 @@
 
     require_once 'db.conf';
     $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+    // Failed to connect to database
     if ($mysqli->connect_error) {
         print "Error: could not connect to database.";
         exit;
     }
+    // Initializes koins to 500
     $query = "UPDATE users SET koins='500' WHERE userName = '$loggedIn'";
     $mysqli->query($query);
     $query = "SELECT koins FROM users WHERE userName = '$loggedIn'";

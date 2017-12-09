@@ -105,6 +105,7 @@
                 $mysqliResult2 = $mysqli2->query($query2);
                 $match2 = $mysqliResult2->num_rows;
                 if ($match2 == 1) {
+                    // Incorrect password
                     $error = 'Incorrect password';
                     require "login_form.php";
                     $mysqliResult2->close();
@@ -134,6 +135,7 @@
 	}
 	
 	function login_form() {
+        // Initial login form
 		$username = "";
 		$error = "";
 		require "login_form.php";
