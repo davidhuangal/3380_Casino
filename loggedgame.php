@@ -150,11 +150,14 @@
 			var player3handval = 0;
 			var dealerhand = [];
 			var dealerhandval = 0;
-			var types = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];	// J, Q, K have value of 10. A has value of 1 or 11.
-			var suits = ["c", "d", "h", "s"];		// Clubs, diamonds, hearts, spades
+			// J, Q, K have value of 10. A has value of 1 or 11.
+			var types = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
+			// Clubs, diamonds, hearts, spades
+			var suits = ["c", "d", "h", "s"];
 			var deck = [];
 			
 			function set(){
+				// Initialize hands
 			    userhand = [];
 			    player2hand = [];
 			    player3hand = [];
@@ -201,6 +204,7 @@
                 document.getElementById("DoubleDown").disabled = false; 
 			}
 			
+			// Draws a card from the deck
 			function hit(){
 			    var num = Math.floor(Math.random() * (deck.length - 1)) + 0;
 			    var card = deck[num];
@@ -208,6 +212,7 @@
 			    return card;
 			}
 			
+			// Executes a hit if the user presses the "Hit" button on the screen
 			function userhit(){
 			    userhand.push(hit());
 			    userhandval = countcards(userhand);
@@ -216,6 +221,7 @@
 			    }
 			}
 			
+			// Counts the number of cards
 			function countcards(hand){
 			    var totalval = 0;
 			    var hasace = false;
@@ -246,6 +252,7 @@
 			    return totalval;
 			}
 			
+			// Displays cards for each of the 4 players
 			function displaycards(){
 			    var i;
 			    for(i=0; i<userhand.length; i++){
@@ -342,7 +349,7 @@
 			    }
 			}
 			
-			
+			// Ends the round and determines whether the player has won, pushed, or lost.
 			function endround(){
 			    document.getElementById("Hit").disabled = true; 
 			    document.getElementById("Stand").disabled = true;
@@ -406,6 +413,7 @@
                 return true;
             }
 			 
+			 // Styling
 		</script>
 	</head>
 	<body>
