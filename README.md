@@ -39,4 +39,5 @@ Information is updated in a table when the user finishes a round of Blackjack, o
 Information is deleted from a table when the user clicks "DELETE ACCOUNT" on their profile page. This can be seen on line 27 of "delete.php".
 
 
-# Other necessary parts....
+# Link to video (Youtube)
+https://www.youtube.com/watch?v=NHeSKsrFsVk&feature=youtu.be
