@@ -423,7 +423,8 @@
 			<div id="inner">
 				<div id="dealer">
 					<h1>Dealer</h1>
-					<div id="dmark">						
+					<div id="dmark">	
+						<!-- These are the pictures for all 13 cards the dealer can have.-->					
 						<img id="d1" src="images/cards/base.png" alt="Card Image"/>
 						<img id="d2" src="images/cards/base.png" alt="Card Image"/>
 						<img id="d3" src="images/cards/base.png" alt="Card Image"/>
@@ -441,6 +442,7 @@
 				</div>
 				<div id="player2">
 					<div id="p2mark">
+						<!-- These are the pictures for all 13 cards player 2 can have.-->
 						<img id="p21" src="images/cards/base.png" alt="Card Image" class="p2img"/>
 						<img id="p22" src="images/cards/base.png" alt="Card Image" class="p2img"/>
 						<img id="p23" src="images/cards/base.png" alt="Card Image" class="p2img"/>
@@ -474,6 +476,7 @@
 	                </div>
                     <br>
 					<div id="umark">
+						<!-- These are the pictures for all 13 cards the user can have.-->
 						<img id="u1" src="images/cards/base.png" alt="Card Image" class="uimg"/>
 						<img id="u2" src="images/cards/base.png" alt="Card Image" class="uimg"/>
 						<img id="u3" src="images/cards/base.png" alt="Card Image" class="uimg"/>
@@ -494,6 +497,7 @@
 				</div>
 				<div id="player3">
 					<div id="p3mark">
+						<!-- These are the pictures for all 13 cards player 3 can have.-->
 						<img id="p31" src="images/cards/base.png" alt="Card Image" class="p3img"/>
 						<img id="p32" src="images/cards/base.png" alt="Card Image" class="p3img"/>
 						<img id="p33" src="images/cards/base.png" alt="Card Image" class="p3img"/>
