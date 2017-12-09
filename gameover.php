@@ -31,13 +31,13 @@
         print "Error: could not complete database query.";
         exit;
     }
-    if($status == 'w'){
+    if($status == 'w'){                     // Win
         $value = $koins + $_POST["bet"];
     }
-    if($status == 'p'){
+    if($status == 'p'){                     // Pushed
         $value = $koins;
     }
-    if($status == 'l'){
+    if($status == 'l'){                     // Lost
         $value = $koins - $_POST["bet"];
     }
     $query = "UPDATE users SET koins='$value' WHERE userName = '$loggedIn'";

@@ -150,8 +150,8 @@
 			var player3handval = 0;
 			var dealerhand = [];
 			var dealerhandval = 0;
-			var types = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
-			var suits = ["c", "d", "h", "s"];
+			var types = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];	// J, Q, K have value of 10. A has value of 1 or 11.
+			var suits = ["c", "d", "h", "s"];		// Clubs, diamonds, hearts, spades
 			var deck = [];
 			
 			function set(){

@@ -8,14 +8,14 @@
 		header("Location: error.php");
 		exit;
 	}
-	
-	$loggedIn = empty($_SESSION['loggedin']) ? false : $_SESSION['loggedin'];
+    
+    $loggedIn = empty($_SESSION['loggedin']) ? false : $_SESSION['loggedin'];   // _SESSION holds user's cookies
 	if (!$loggedIn) {
 		header("Location: login.php");
 		exit;
 	}
 
-//End of cited code
+    //End of cited code
 
     header("Location: logout.php");
     require_once 'db.conf';
