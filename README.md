@@ -22,7 +22,7 @@ koins int
 id int primary key auto_increment not null,  
 email varchar(255) not null unique  
 
-## ERD
+# ERD
 ![alt-text](https://i.imgur.com/E5FSl5C.png "3380 Casino ERD")
 
 # Elements of CRUD
@@ -39,5 +39,5 @@ Information is updated in a table when the user finishes a round of Blackjack, o
 Information is deleted from a table when the user clicks "DELETE ACCOUNT" on their profile page. This can be seen on line 27 of "delete.php".
 
 
-# Link to video (Youtube)
-https://www.youtube.com/watch?v=NHeSKsrFsVk&feature=youtu.be
+# Video Demonstration
+[Video Demonstration](https://www.youtube.com/watch?v=NHeSKsrFsVk "Video Demonstration")
